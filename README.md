@@ -33,22 +33,25 @@ Use it in your templates to add elements to the `head` from everywhere in your t
 Use it do define different components sharing the same script:
 
 ```html
-hello-alice.njk: {% head 'greeter', '
-<script src="greeter.js"></script>
-' %} <my-greeter>Alice</my-greeter>
+hello-alice.njk:
+
+{% head 'greeter', '<script src="greeter.js"></script>' %}
+<my-greeter>Alice</my-greeter>
 ```
 
 ```html
-hello-bob.njk: {% head 'greeter', '
-<script src="greeter.js"></script>
-' %} <my-greeter>Bob</my-greeter>
+hello-bob.njk:
+
+{% head 'greeter', '<script src="greeter.js"></script>' %}
+<my-greeter>Bob</my-greeter>
 ```
 
 You can now use both components without having to worry about importing the same script multiple times.
 
 ```html
 <body>
-  {% include 'hello-alice.njk' %} {% include 'hello-bob.njk' %}
+  {% include 'hello-alice.njk' %}
+  {% include 'hello-bob.njk' %}
 </body>
 ```
 
