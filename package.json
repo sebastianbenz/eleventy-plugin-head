@@ -1,0 +1,12 @@
+{
+  "name": "eleventy-plugin-head",
+  "version": "1.0.0",
+  "description": "Append elements to the head of the page from your templates",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "eleventy --serve"
+  },
+  "keywords": ["Eleventy", "Bento", "Components"],
+  "author": "Sebastian Benz",
+  "license": "Apache-2.0"
+}
