@@ -15,7 +15,7 @@ npm i eleventy-plugin-head --save-development
 ...and add it to your `.eleventy.js` configuration file:
 
 ```js
-const pluginHead = require('../.eleventy.js');
+const pluginHead = require('eleventy-plugin-head ');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginHead);
