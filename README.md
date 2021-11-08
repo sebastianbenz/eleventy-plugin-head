@@ -54,7 +54,7 @@ You can now use both components without having to worry about importing the same
 
 Which will result in:
 
-```
+```html
 <head>
   <script src="greeter.js"></script>
 </head>
