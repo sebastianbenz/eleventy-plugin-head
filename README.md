@@ -28,6 +28,15 @@ Use it in your templates to add elements to the `head` from everywhere in your t
 {% head 'key', '<hello/>' %}
 ```
 
+You can also programmatically add elements to the `head` (e.g. from within a shortcode):
+
+```
+eleventyConfig.addShortcode("title", function(title) {
+  pluginHead.head.add(this.page.inputPath, 'title', `<title>${title}</title>`);
+  return '';
+}
+```
+
 ## Example
 
 Use it do define different components sharing the same script:

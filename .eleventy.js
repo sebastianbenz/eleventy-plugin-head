@@ -1,7 +1,7 @@
 const Head = require('./Head.js');
 const INJECTION_POINT = '</head>';
 
-module.exports = function (eleventyConfig) {
+function headPlugin(eleventyConfig) {
   eleventyConfig.addTransform('apply-head', function (content) {
     const head = Head.serialize(this.inputPath);
     return content.replace(INJECTION_POINT, head);
@@ -16,3 +16,7 @@ module.exports = function (eleventyConfig) {
     Head.reset();
   });
 };
+
+headPlugin.head = Head;
+
+module.exports = headPlugin;
