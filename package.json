@@ -1,6 +1,6 @@
 {
   "name": "eleventy-plugin-head",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Append elements to the head of the page from your templates",
   "main": ".eleventy.js",
   "keywords": ["Eleventy", "Bento", "Components"],
@@ -9,7 +9,13 @@
   "peerDependencies": {
     "@11ty/eleventy": "0.12.1"
   },
-  "files": [
-    "*.js"
-  ]
+  "files": ["*.js"],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sebastianbenz/eleventy-plugin-head.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sebastianbenz/eleventy-plugin-head/issues"
+  },
+  "homepage": "https://github.com/sebastianbenz/eleventy-plugin-head"
 }

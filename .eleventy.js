@@ -15,7 +15,7 @@ function headPlugin(eleventyConfig) {
   eleventyConfig.on('afterBuild', () => {
     Head.reset();
   });
-};
+}
 
 headPlugin.head = Head;
 
