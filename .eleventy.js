@@ -1,4 +1,4 @@
-const Head = require('./Head.js');
+const Head = require('./head.js');
 const INJECTION_POINT = '</head>';
 
 function headPlugin(eleventyConfig) {
